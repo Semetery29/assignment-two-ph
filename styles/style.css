@@ -1,0 +1,129 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* common styles and ultilities */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: whitesmoke;
+    margin: 0;
+}
+
+/* nav bar and title */
+header{
+    background-color: #f0e6d3;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 140px;
+    align-items: center;
+}
+.web-title{
+    font-size: 32px;
+}
+.nav-menu{
+    display: flex;
+    list-style-type: none;
+    font-size: 15px;
+    gap: 45px;
+}
+.banner{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    /* gap: 15px; */
+}
+.banner-title{
+    font-size: 48px;
+    font-weight: 700;
+}
+.banner-info{
+    font-size: 14px;
+    color: gray;
+}
+.banner-button{
+    background-color: orange;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+}
+/* section-1 = explore */
+.explore{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 60px 125px;
+
+}
+.e-img{
+    width: 256.5px;
+}
+.four-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+/* section-2 = features details */
+.features{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 120px;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+.side-sec p{
+    font-size: 14px;
+    color: gray;
+}
+.side-sec{
+    height: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 5px 5px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #d3d3d3;
+}
+.btn-container{
+    position: relative;
+}
+.btn-container .btn{
+    position: absolute;
+    top: 90%;
+    right: 73%;
+}
+/* facts section */
+.facts{
+    padding: 125px;
+}
+.fact-container{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+.fact-title{
+    font-size: 32px;
+}
+.fact-des, .fact-info{
+    font-size: 14px;
+    color: gray;
+    padding-bottom: 20px;
+}
+.fact{
+    width: 150px;
+    height: 170px;
+    text-align: center;
+    padding: 20px;
+    border: solid 2px orange ;
+    transition: transform 1.8s;
+}
+
+.fact:hover{
+    transform: scale(1.2);
+    background-color: wheat;
+}
