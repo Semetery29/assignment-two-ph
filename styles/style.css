@@ -9,39 +9,46 @@ body {
 }
 
 /* nav bar and title */
-header{
+header {
     background-color: #f0e6d3;
 }
-.menu{
+
+.menu {
     display: flex;
     justify-content: space-between;
     padding: 20px 140px;
     align-items: center;
 }
-.web-title{
+
+.web-title {
     font-size: 32px;
 }
-.nav-menu{
+
+.nav-menu {
     display: flex;
     list-style-type: none;
     font-size: 15px;
     gap: 45px;
 }
-.banner{
+
+.banner {
     display: flex;
     text-align: center;
     flex-direction: column;
     /* gap: 15px; */
 }
-.banner-title{
+
+.banner-title {
     font-size: 48px;
     font-weight: 700;
 }
-.banner-info{
+
+.banner-info {
     font-size: 14px;
     color: gray;
 }
-.banner-button{
+
+.banner-button {
     background-color: orange;
     color: white;
     font-size: 18px;
@@ -50,24 +57,34 @@ header{
     border: none;
     border-radius: 5px;
 }
+
+.banner-img {
+    width: 70%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
 /* section-1 = explore */
-.explore{
+.explore {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin: 60px 125px;
 
 }
-.e-img{
+
+.e-img {
     width: 256.5px;
 }
-.four-images{
+
+.four-images {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
+
 /* section-2 = features details */
-.features{
+.features {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,55 +92,170 @@ header{
     gap: 50px;
     margin-bottom: 100px;
 }
-.side-sec p{
+
+.side-sec p {
     font-size: 14px;
     color: gray;
 }
-.side-sec{
+
+.side-sec {
     height: 150px;
-    white-space: nowrap;
+    /* white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis; */
     border: 5px 5px;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 3px 3px 3px #d3d3d3;
 }
-.btn-container{
+
+.btn-container {
     position: relative;
 }
-.btn-container .btn{
+.btn-img{
+width: 708px;
+}
+.btn-container .btn {
     position: absolute;
     top: 90%;
-    right: 73%;
+    right: 70%;
 }
+
+/* feature section */
+.f-title {
+    border-left: solid 5px orange;
+    padding-left: 10px;
+    font-size: 32px;
+}
+
 /* facts section */
-.facts{
-    padding: 125px;
+.facts {
+    padding: 40px 125px;
 }
-.fact-container{
+
+.fact-container {
     display: flex;
     justify-content: center;
     gap: 80px;
+    padding: 80px;
 }
-.fact-title{
+
+.fact-title, .sp-title {
     font-size: 32px;
 }
-.fact-des, .fact-info{
+
+.fact-des,
+.fact-info,
+.sp-des {
     font-size: 14px;
     color: gray;
     padding-bottom: 20px;
 }
-.fact{
+
+.fact {
     width: 150px;
     height: 170px;
     text-align: center;
     padding: 20px;
-    border: solid 2px orange ;
+    border: solid 2px orange;
     transition: transform 1.8s;
 }
 
-.fact:hover{
+.fact:hover {
     transform: scale(1.2);
     background-color: wheat;
+}
+/* extra section */
+.extra{
+    text-align: center;
+     padding: 20px 120px; 
+     background-color: #fff4e7; 
+     margin: 0 120px;
+}
+
+/* sponsor section */
+.sponsor {
+    text-align: center;
+    padding: 0 100px;
+}
+
+.sp-icons {
+    display: flex;
+    justify-content: space-evenly;
+    filter: grayscale(100%);
+    margin-bottom: 100px;
+}
+/* footer section */
+.footer {
+    text-align: center;
+    background-color: #fff4e7;
+    margin: 0 120px;
+}
+
+.footer-text {
+    padding: 20px;
+    color: #424242;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+@media only screen and (max-width:576px) {
+    * {
+        margin: 0;
+    }
+
+    .menu {
+        padding: 0;
+        flex-direction: column;
+        column-gap: 10px;
+    }
+    .nav-menu{
+        padding-left: 0;
+    }
+    .banner img {
+        width: 100%;
+    }
+
+    .four-images {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .explore {
+        flex-direction: column;
+    }
+    .features{
+        flex-direction: column;
+        margin: 0;
+        padding: 10px;
+        margin-bottom: 0;
+    }
+    .btn-img{
+        width: 100%;
+    }
+    .btn-container{
+        text-align: center;
+    }
+    .btn-container .btn{
+        top: 75%;
+        right: 15%;
+        bottom: 5%;
+    }
+    .facts, .extra{
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    .fact-container{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .sp-icons{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer{
+        margin: 0;
+    }
 }
